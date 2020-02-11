@@ -2,13 +2,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// install from d3
 import { scaleTime } from "d3-scale";
+// install from d3
 import { utcDay } from "d3-time";
 
+// src/lib/Chart.js
+// src/lib/ChartCanvas.js
 import { ChartCanvas, Chart } from "react-stockcharts";
+// src/lib/series/CandlestickSeries.js
 import { CandlestickSeries } from "react-stockcharts/lib/series";
+
+// src/lib/axes/XAxis.js
+// src/lib/axes/XAxis.js
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
+
+// src/lib/helper/fitWidth.js
 import { fitWidth } from "react-stockcharts/lib/helper";
+
+// src/lib/utils/index.js
+// src/lib/utils/barWidth.js
 import { last, timeIntervalBarWidth } from "react-stockcharts/lib/utils";
 
 class CandleStickChart extends React.Component {
